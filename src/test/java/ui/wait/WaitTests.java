@@ -13,4 +13,18 @@ public class WaitTests extends BaseTests {
         loadingPage.clickStart();
         assertEquals("Hello World!", loadingPage.getLoadingText());
     }
+
+    @Test
+    public void testWaitUntilHidden2(){
+        var loadingPage = homePage.clickDynamicLoading().clickExample1();
+        loadingPage.clickStart();
+        assertEquals("Hello World!!", loadingPage.getLoadingText());
+    }
+
+    @Test
+    public void testWaitUntilHidden3(){
+        var loadingPage = homePage.clickDynamicLoading().clickExample1();
+        loadingPage.clickStart();
+        assertEquals("Hello World!!", loadingPage.getLoadingText());
+    }
 }
